@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake User Data Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Random User Data Generator</h1>
+
+  <div>
+    <label for="region">Select Region:</label>
+    <select id="region">
+      <option value="USA">USA</option>
+      <option value="Poland">Poland</option>
+      <option value="Georgia">Georgia</option>
+    </select>
+
+    <label for="error-slider">Error Per Record:</label>
+    <input id="error-slider" type="range" min="0" max="10" value="0" step="0.1">
+    <input id="error-input" type="number" min="0" max="1000" value="0" step="0.1">
+
+    <label for="seed">Seed Value:</label>
+    <input id="seed" type="text" placeholder="Enter seed">
+    <button id="random-seed-btn">Random Seed</button>
+  </div>
+
+  <table id="user-table">
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>Identifier</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
